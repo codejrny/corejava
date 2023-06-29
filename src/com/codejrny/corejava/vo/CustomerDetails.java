@@ -4,8 +4,11 @@ public class CustomerDetails {
     private String customerName;
     private double netWorth;
 
-    public CustomerDetails(){
-        System.out.println("CustomerDetails constructor");
+    public CustomerDetails() {
+    }
+
+    public CustomerDetails(String customerName) {
+        this.customerName = customerName;
     }
 
     public String getCustomerName(){

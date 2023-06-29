@@ -1,8 +1,9 @@
 package com.codejrny.corejava.vo;
 
 public class WealthCustomerDetails extends CustomerDetails {
-    public WealthCustomerDetails() {
-        super();
+
+    public WealthCustomerDetails(String customerName) {
+        super(customerName);
         System.out.println("WealthCustomerDetails constructor");
     }
 
