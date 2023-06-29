@@ -1,16 +1,18 @@
 package com.codejrny.corejava;
 
+import com.codejrny.corejava.vo.CustomerDetails;
 import com.codejrny.corejava.vo.WealthCustomerDetails;
 
 public class AppMain {
     public static void main(String[] args) {
-        WealthCustomerDetails customerDetails1=new WealthCustomerDetails();
-        customerDetails1.setCustomerName("W X");
-        customerDetails1.setNetWorth(200000);
+        CustomerDetails customerDetails;
 
-        System.out.println(customerDetails1.toString());
+        customerDetails=new CustomerDetails();
+        System.out.println(customerDetails.hasRelationshipManager());
 
-        boolean result=customerDetails1.hasRelationshipManager();
-        System.out.println("result:"+result);
+        customerDetails=new WealthCustomerDetails();
+        System.out.println(customerDetails.hasRelationshipManager());
+
     }
+
 }
