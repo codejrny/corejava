@@ -5,7 +5,7 @@ public class CustomerDetails {
     private double netWorth;
 
     public CustomerDetails(){
-
+        System.out.println("CustomerDetails constructor");
     }
 
     public String getCustomerName(){
@@ -20,11 +20,23 @@ public class CustomerDetails {
         }
     }
 
+    public boolean hasRelationshipManager(){
+        return false;
+    }
+
     public double getNetWorth() {
         return netWorth;
     }
 
     public void setNetWorth(double netWorth) {
         this.netWorth = netWorth;
+    }
+
+    @Override
+    public String toString() {
+        return "CustomerDetails{" +
+                "customerName='" + customerName + '\'' +
+                ", netWorth=" + netWorth +
+                '}';
     }
 }
